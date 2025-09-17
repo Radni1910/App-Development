@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Counter Text -->
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:gravity="center"/>
+
+    <!-- Guideline for buttons -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="horizontal"/>
+
+    <!-- Decrement Button -->
+    <Button
+        android:id="@+id/btnDecrement"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_decrement"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnReset"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_reset"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@id/btnDecrement"
+        app:layout_constraintEnd_toStartOf="@+id/btnIncrement"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <!-- Increment Button -->
+    <Button
+        android:id="@+id/btnIncrement"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_increment"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@id/btnReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintHorizontal_weight="1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
