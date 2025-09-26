@@ -7,6 +7,7 @@ import {
   TextInput,
   View,
 } from "react-native";
+
 export default function TodoList() {
   const [task, setTask] = useState("");
   const [todos, setTodos] = useState<string[]>([]);
@@ -17,10 +18,12 @@ export default function TodoList() {
       setTask("");
     }
   };
+
   const deleteTask = (index: number) => {
     const newTodos = todos.filter((_, i) => i !== index);
     setTodos(newTodos);
   };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Todo List</Text>
@@ -34,6 +37,7 @@ export default function TodoList() {
         />
         <Button title="Add" onPress={addTask} />
       </View>
+
       <FlatList
         data={todos}
         keyExtractor={(_, index) => index.toString()}

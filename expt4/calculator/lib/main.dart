@@ -1,23 +1,30 @@
 import 'package:flutter/material.dart';
+
 void main() => runApp(CalculatorApp());
+
 class CalculatorApp extends StatelessWidget {
   const CalculatorApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(debugShowCheckedModeBanner: false, home: Calculator());
   }
 }
+
 class Calculator extends StatefulWidget {
   const Calculator({super.key});
+
   @override
   _CalculatorState createState() => _CalculatorState();
 }
+
 class _CalculatorState extends State<Calculator> {
   String textToDisplay = "0";
   String expression = "";
   String operation = "";
   double firstNum = 0;
   bool shouldResetDisplay = false;
+
   void btnOnClick(String btnText) {
     setState(() {
       if (btnText == "C") {
@@ -126,6 +133,7 @@ class _CalculatorState extends State<Calculator> {
             ),
           ),
           Divider(color: Colors.white24),
+
           // Buttons
           Row(
             children: [
