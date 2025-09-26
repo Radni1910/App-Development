@@ -6,8 +6,8 @@ void main() {
   }
   print(" ForEach Loop");
   var numbers = [1, 2, 3, 4, 5];
-  numbers.forEach((n)=> print(n));
-  
+  numbers.forEach((n) => print(n));
+
   print(" While Loop ");
   int count = 1;
   while (count <= 5) {
@@ -21,5 +21,3 @@ void main() {
     num++;
   } while (num <= 5);
 }
-
-
