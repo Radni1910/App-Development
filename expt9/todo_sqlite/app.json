@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "MyApp",
+    "slug": "myapp",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "android": {
+      "package": "com.yourname.myapp"
+    },
+    "ios": {
+      "bundleIdentifier": "com.yourname.myapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "50b4c913-5aff-4024-827f-04ca2e4b1cbc"
+      }
+    },
+    "plugins": [
+      "expo-sqlite"
+    ]
+  }
+}
