@@ -1,19 +1,15 @@
-# Flutter Calculator App
+# Flutter Calculator with SQLite Integration
 
-A simple **Calculator App** built with Flutter.  
-It performs basic arithmetic operations with a clean UI.
+## Overview
+This is a simple calculator app built using Flutter that supports basic arithmetic operations and stores calculation history locally using SQLite. Users can view, delete, and manage their past calculations.
 
 ---
 
 ## Features
 
-- ➕ Addition
-- ➖ Subtraction
-- ✖️ Multiplication
-- ➗ Division
-- % Modulo
-- C Clear
-- +/- Toggle sign
-- Decimal support
+- Basic arithmetic operations: addition, subtraction, multiplication, division.
+- Persistent calculation history stored locally using SQLite.
+- Delete single or all calculation records.
+- Simple and responsive Flutter UI.
 
 ---
