@@ -1,0 +1,15 @@
+**Firebase Authentication App**
+
+This project implements user authentication using Firebase Auth in React Native.
+It includes Email/Password login and signup, password reset, optional Google Sign-In, Phone OTP, and route protection with session persistence.
+
+🧩 Features
+
+- Firebase Authentication (Email & Password)
+- Google Sign-In (optional)
+- Phone OTP (optional)
+- Forgot Password
+- Protected Routes (Home/Profile)
+- Form Validation
+- Centralized Error Handling
+- Session Persistence
