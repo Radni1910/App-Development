@@ -15,13 +15,4 @@ This app allows users to add, view, and delete tasks with real-time updates from
 
 ---
 
-## Tech Stack
-React Native – Mobile app framework
-
-Expo – Development and build tools
-
-Expo Router – File-based routing
-
-Firebase Firestore – Backend database
-
-React Navigation – Theming and navigation
+https://github.com/user-attachments/assets/0b82e299-f0a5-4ed2-8e6d-857778093287
