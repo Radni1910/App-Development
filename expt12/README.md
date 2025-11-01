@@ -13,3 +13,6 @@ It includes Email/Password login and signup, password reset, optional Google Sig
 - Form Validation
 - Centralized Error Handling
 - Session Persistence
+
+  flutter authentication
+  https://github.com/user-attachments/assets/537fa197-c812-46c5-9b5e-9d4fc68271f6
